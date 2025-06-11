@@ -8,5 +8,5 @@ services:
       - "10000-20000:10000-20000" # Range for tunnel connections
     environment:
       - NODE_ENV=production
-      - DOMAIN=${DOMAIN:tunnel2.jainparichay.online}
+      - 'DOMAIN=${DOMAIN:-tunnel2.jainparichay.online}'
     restart: unless-stopped
