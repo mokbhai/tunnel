@@ -5,7 +5,7 @@ services:
     build: .
     ports:
       - "${PORT}:3000"
-      - "40000-41000:40000-41000"
+      - "50000-51000:50000-51000"
     environment:
       - SERVICE_FQDN_TUNNEL
       - NODE_ENV=production
