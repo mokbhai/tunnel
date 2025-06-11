@@ -28,8 +28,8 @@
     "ws": "^8.16.0"
   },
   "scripts": {
-    "test": "mocha --check-leaks './**/*.test.js'",
+    "test": "mocha --experimental-modules --check-leaks './**/*.test.js'",
     "start": "./bin/server",
-    "dev": "node-dev bin/server --port 3000"
+    "dev": "node-dev bin/server --port 3001"
   }
 }

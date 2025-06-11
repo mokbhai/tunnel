@@ -20,4 +20,4 @@ EXPOSE 3000
 ENV NODE_ENV=production
 
 # Start the server
-CMD ["node", "bin/server", "--port", "3000"]
+CMD ["node", "bin/server", "--port", "3000", "--domain", ${DOMAIN}]
