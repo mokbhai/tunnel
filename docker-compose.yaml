@@ -4,9 +4,11 @@ services:
   localtunnel-server:
     build: .
     ports:
-      - "3000:3000"
+      - "{PORT}:3000"
       - "10000-20000:10000-20000" # Range for tunnel connections
     environment:
+      - SERVICE_FQDN_TUNNEL
       - NODE_ENV=production
       - DOMAIN=$DOMAIN
+      - PORT=$PORT
     restart: unless-stopped
