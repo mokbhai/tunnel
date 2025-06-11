@@ -5,7 +5,8 @@ services:
     build: .
     ports:
       - "3000:3000"
+      - "10000-20000:10000-20000" # Range for tunnel connections
     environment:
       - NODE_ENV=production
-      - DOMAIN=${DOMAIN:backend.impressment.in}
+      - DOMAIN=${DOMAIN:tunnel2.jainparichay.online}
     restart: unless-stopped
