@@ -4,7 +4,7 @@ services:
   localtunnel-server:
     build: .
     ports:
-      - "{PORT}:3000"
+      - "${PORT}:3000"
       - "10000-20000:10000-20000" # Range for tunnel connections
     environment:
       - SERVICE_FQDN_TUNNEL
